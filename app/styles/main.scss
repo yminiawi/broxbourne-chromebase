@@ -1330,16 +1330,38 @@ body { background: #EEF3F7; }
   margin: 25px;
 }
 
-.primary-button {
+.primary-button { margin: 25px 0; }
 
-  margin: 25px;
-  // margin: 25px auto;
-  // text-align: center;
-}
-
-// QUESTION PAGE
+// FORM PAGE
 .question-header {
   background: rgba($p-colour-2, 0.2);
   padding: 10px 0;
   margin-bottom: 50px;
 }
+
+.form-date .date-input-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.form-date input { width: 60px; }
+.form-date span { display: block; }
+.date-input-item label { font-weight: 300; }
+
+.hint-text {color: $mid-grey; }
+
+label { font-weight: 500; }
+
+.multiple-choice [type=radio] + label::before {
+  background-color: $white;
+}
+
+.inline-radio { display: inline-block; margin-right: 15px; }
+  .inline-radio:last-child { margin-right: 0; }
+  .inline-radio label { font-weight: 300; }
+
+legend { font-size: 16px; font-weight: 400; }
+
+h1 { font-weight: 500; color: $p-colour-2; }
+
+.back-link { margin-bottom: 20px; display: block; }
