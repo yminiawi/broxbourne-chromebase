@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Broxbourne Chromebase Prototype</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="header">
+          <div class="col-11 offset-1">
+            <div class="logo">
+              <a href="index.html">
+                <div class="logo-mark">
+                  <img src="images/badger.svg" alt="Broxbourne badger logo mark" class="width-100">
+                </div><!-- end of logo-mark -->
+                <div class="word-mark">
+                  <h1 class="clear-margin">Borough of Broxbourne</h1>
+                </div><!-- end of word-mark -->
+              </a>
+            </div><!-- end of logo -->
+          </div><!-- end of col 12 -->
+        </div><!-- end of header -->
+      </div><!-- end of row  -->
+
+      <div class="row question-header">
+        <div class="col-11 offset-1">
+          <div class="breadcrumbs">
+            <ol class="breadcrumbs-list">
+              <li class="breadcrumbs-list-item">
+                <a class="breadcrumbs-link" href="#home-link">Home</a>
+              </li>
+              <li class="breadcrumbs-list-item">
+                <a class="breadcrumbs-link" href="#link-1">Council Tax</a>
+              </li>
+              <li class="breadcrumbs-list-item" aria-current="page">Pay Council Tax</li>
+            </ol>
+          </div>
+
+          <br /><h1>Report a bin</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-11 offset-1">
+          <!-- <a href="#" class="govuk-back-link">Back</a> -->
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="row">
+              <div class="col-6">
+                <!-- <h1 class="govuk-heading-xl">Passport details</h1> -->
+
+                <form action="/form-handler" method="post" novalidate>
+
+                  <div class="form-element">
+                    <label for="full-name">Full name</label>
+                    <input id="full-name" name="full-name" type="text" class="text-input form-control" />
+                  </div>
+
+                  <div class="form-element">
+                    <label for="email-address">Email address</label>
+                    <input id="email-address" name="email-address" type="text" class="text-input form-control" />
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
+                      <label for="collection-date"> Collection date</label>
+                      <span id="collection-date-hint" class="hint-text">
+                        For example, 31 3 2019
+                      </span>
+                      <div class="date-input" id="collection-date">
+                        <div class="date-input-item">
+                          <div class="form-element">
+                            <label for="email-address">Day</label>
+                            <input id="email-address" name="email-address" type="text" class="text-input form-control" />
+                          </div>
+                        </div>
+                        <div class="date-input-item">
+                          <div class="form-element">
+                            <label for="email-address">Month</label>
+                            <input id="email-address" name="email-address" type="text" class="text-input form-control" />
+                          </div>
+                        </div>
+                        <div class="date-input-item">
+                          <div class="form-element">
+                            <label for="email-address">Year</label>
+                            <input id="email-address" name="email-address" type="text" class="text-input form-control" type="number" pattern="[0-9]* "/>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <button type="submit" class="primary-button">
+                    Continue
+                  </button>
+
+                </form>
+              </div>
+            </div>
+          </main>
+        </div>
+      </row>
+
+    </div><!-- end of container-fluid -->
+
+    <!-- build:js scripts/vendor.js -->
+
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

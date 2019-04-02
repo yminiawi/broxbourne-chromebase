@@ -178,9 +178,9 @@ $cal-week-bar: aliceblue;
 .clear-margin { margin: 0; }
 .clear-padding { padding: 0; }
 .marb-5 { margin-bottom: 5px; }
-.marb-50 { margin-bottom: 50px; }
+.marb-50 { margin-bottom: 50px !important; }
 .mb-10 { margin-bottom: 10px; }
-.m0-auto { margin: 0 auto; }
+.m0-auto { margin: 0 auto !important; }
 
 //FORCE IE-9 TO DISPLAY SVG CORRECTLY
 img[src$=".svg"] {width: 100%;}
@@ -1327,13 +1327,19 @@ body { background: #EEF3F7; }
 }
 
 .view-all-services {
-  margin: 0 auto;
-  margin-bottom: 50px;
-  text-align: center;
+  margin: 25px;
 }
 
 .primary-button {
-  margin: 25px auto;
-  text-align: center;
+
+  margin: 25px;
+  // margin: 25px auto;
+  // text-align: center;
 }
- 
+
+// QUESTION PAGE
+.question-header {
+  background: rgba($p-colour-2, 0.2);
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
