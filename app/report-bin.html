@@ -51,19 +51,19 @@
               <li class="breadcrumbs-list-item" aria-current="page">Pay Council Tax</li>
             </ol>
           </div> -->
-          <a href="#" class="back-link">Back</a>
+          <a href="index.html" class="back-link">Back</a>
           <h1>Report a bin</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-11 offset-1">
-          <main class="govuk-main-wrapper " id="main-content" role="main">
+          <main class="govuk-main-wrapper" id="main-content" role="main">
             <div class="row">
               <div class="col-6">
                 <!-- <h1 class="govuk-heading-xl">Passport details</h1> -->
 
-                <form action="address.html" method="post" novalidate>
+                <form action="address.html" method="get" novalidate>
 
                   <div class="form-element">
                     <label for="full-name">Full name</label>
@@ -75,45 +75,43 @@
                     <input id="email-address" name="email-address" type="text" class="text-input form-control" />
                   </div>
 
-                  <div class="form-date">
-                    <fieldset class="fieldset" aria-describedby="expiry-hint" role="group">
-                      <label for="collection-date">Date supposed to be collected</label>
-                      <span id="collection-date-hint" class="hint-text">
-                        For example, 31 3 2019
-                      </span>
-                      <div class="date-input" id="collection-date">
-                        <div class="date-input-item">
-                          <div class="form-element">
-                            <label for="email-address">Day</label>
-                            <input id="email-address" name="email-address" type="text" class="text-input form-control" />
-                          </div>
-                        </div>
-                        <div class="date-input-item">
-                          <div class="form-element">
-                            <label for="email-address">Month</label>
-                            <input id="email-address" name="email-address" type="text" class="text-input form-control" />
-                          </div>
-                        </div>
-                        <div class="date-input-item">
-                          <div class="form-element">
-                            <label for="email-address">Year</label>
-                            <input id="email-address" name="email-address" type="text" class="text-input form-control" type="number" pattern="[0-9]* "/>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </div>
+                  <fieldset>
+                    <!-- <legend>What is your address?</legend> -->
+                    <div class="form-group">
+                      <label for="address-line-1">
+                        Building and street
+                        <!-- <span class="govuk-visually-hidden">line 1 of 2</span> -->
+                      </label>
+                      <input class="text-input form-control" id="address-line-1" name="address-line-1" type="text">
+                    </div>
 
-                  <legend>What bin was supposed to be collected?</legend>
-                  <div class="multiple-choice inline-radio">
-                    <input id="radio-1" name="group1" type="radio" />
-                    <label for="radio-1">Green bin</label>
-                  </div>
+                    <div class="form-group">
+                      <label for="address-line-2">
+                        <!-- <span class="govuk-visually-hidden">Building and street line 2 of 2</span> -->
+                      </label>
+                      <input class="text-input form-control" id="address-line-2" name="address-line-2" type="text">
+                    </div>
 
-                  <div class="multiple-choice inline-radio">
-                    <input id="radio-2" name="group1" type="radio" />
-                    <label for="radio-2">Blue bin</label>
-                  </div>
+                    <div class="form-group">
+                      <label for="address-town">Town or city</label>
+                      <input class="input-short text-input form-control" id="address-town" name="address-town" type="text">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="address-county">
+                        County
+                      </label>
+                      <input class="text-input form-control input-short" id="address-county" name="address-county" type="text">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="address-postcode">
+                        Postcode
+                      </label>
+                      <input class="text-input form-control input-20" id="address-postcode" name="address-postcode" type="text">
+                    </div>
+
+                  </fieldset>
 
                   <button class="primary-button">
                     <p class="button-text">Continue</p>

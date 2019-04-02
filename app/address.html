@@ -40,39 +40,25 @@
 
       <div class="row question-header">
         <div class="col-11 offset-1">
-          <!-- <div class="breadcrumbs">
-            <ol class="breadcrumbs-list">
-              <li class="breadcrumbs-list-item">
-                <a class="breadcrumbs-link" href="#home-link">Home</a>
-              </li>
-              <li class="breadcrumbs-list-item">
-                <a class="breadcrumbs-link" href="#link-1">Council Tax</a>
-              </li>
-              <li class="breadcrumbs-list-item" aria-current="page">Pay Council Tax</li>
-            </ol>
-          </div> -->
-          <a href="#" class="back-link">Back</a>
-          <h1>Report a bin</h1>
+          <a href="report-bin.html" class="back-link">Back</a>
+          <h1><label for="group1">What bin was supposed to be collected?</label></h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-11 offset-1">
-          <main class="govuk-main-wrapper " id="main-content" role="main">
+          <main class="main-wrapper " id="main-content" role="main">
             <div class="row">
               <div class="col-6">
-                <!-- <h1 class="govuk-heading-xl">Passport details</h1> -->
-
-                <form action="address.html" method="post" novalidate>
-
-                  <div class="form-element">
-                    <label for="full-name">Full name</label>
-                    <input id="full-name" name="full-name" type="text" class="text-input form-control" />
+                <form action="index.html" method="get" novalidate>
+                  <div class="multiple-choice inline-radio">
+                    <input id="radio-1" name="group1" type="radio" />
+                    <label for="radio-1">Green bin</label>
                   </div>
 
-                  <div class="form-element">
-                    <label for="email-address">Email address</label>
-                    <input id="email-address" name="email-address" type="text" class="text-input form-control" />
+                  <div class="multiple-choice inline-radio">
+                    <input id="radio-2" name="group1" type="radio" />
+                    <label for="radio-2">Blue bin</label>
                   </div>
 
                   <div class="form-date">
@@ -85,34 +71,23 @@
                         <div class="date-input-item">
                           <div class="form-element">
                             <label for="email-address">Day</label>
-                            <input id="email-address" name="email-address" type="text" class="text-input form-control" />
+                            <input id="email-address" name="email-address" type="text" class="text-input form-control" type="number" pattern="[0-9]*" />
                           </div>
                         </div>
                         <div class="date-input-item">
                           <div class="form-element">
                             <label for="email-address">Month</label>
-                            <input id="email-address" name="email-address" type="text" class="text-input form-control" />
+                            <input id="email-address" name="email-address" type="text" class="text-input form-control" type="number" pattern="[0-9]*" />
                           </div>
                         </div>
                         <div class="date-input-item">
                           <div class="form-element">
                             <label for="email-address">Year</label>
-                            <input id="email-address" name="email-address" type="text" class="text-input form-control" type="number" pattern="[0-9]* "/>
+                            <input id="email-address" name="email-address" type="text" class="text-input form-control" type="number" pattern="[0-9]*" />
                           </div>
                         </div>
                       </div>
                     </fieldset>
-                  </div>
-
-                  <legend>What bin was supposed to be collected?</legend>
-                  <div class="multiple-choice inline-radio">
-                    <input id="radio-1" name="group1" type="radio" />
-                    <label for="radio-1">Green bin</label>
-                  </div>
-
-                  <div class="multiple-choice inline-radio">
-                    <input id="radio-2" name="group1" type="radio" />
-                    <label for="radio-2">Blue bin</label>
                   </div>
 
                   <button class="primary-button">

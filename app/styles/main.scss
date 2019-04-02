@@ -1363,5 +1363,9 @@ label { font-weight: 500; }
 legend { font-size: 16px; font-weight: 400; }
 
 h1 { font-weight: 500; color: $p-colour-2; }
+.logo h1 { color: $black; }
 
-.back-link { margin-bottom: 20px; display: block; } 
+.back-link { margin-bottom: 20px; display: block; }
+
+.input-short { width: 50%; }
+.input-20 { width: 20%; }
