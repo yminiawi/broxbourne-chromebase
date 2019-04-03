@@ -1375,3 +1375,7 @@ h1 { font-weight: 500; color: $p-colour-2; }
 .p-cta-text, .s-cta-text { width: 90%; padding: 60px; }
 
 .vertical-align { margin-top: 10vh; }
+
+.multiple-choice [type=checkbox] + label::before {
+  background-color: $white;
+}
